@@ -49,7 +49,7 @@
           "type": "lookup",
           "from": "source_1",
           "key": "Country_Code",
-          "fields": ["properties.ISO_A3"],
+          "fields": ["properties.ADM0_A3_IS"],
           "values": ["Percent"]
         },
         {
@@ -98,7 +98,7 @@
           "stroke": {"value": "white"},
           "fill": {"scale": "color", "field": "Percent"},
           "tooltip": {
-            "signal": "{\"Country\": isValid(datum[\"properties.NAME\"]) ? datum[\"properties.NAME\"] : \"\"+datum[\"properties.NAME\"], \"Percent\": format(datum[\"Percent\"], \"\")}"
+            "signal": "{\"Country\": isValid(datum[\"properties.NAME\"]) ? datum[\"properties.NAME\"] : \"\"+datum[\"properties.NAME\"], \"Percent\": format(datum[\"Percent\"], \".0f\")}"
           },
           "ariaRoleDescription": {"value": "geoshape"},
           "description": {
@@ -112,17 +112,17 @@
   "scales": [
     {
       "name": "color",
-      "type": "log",
+      "type": "linear",
       "domain": {"data": "data_1", "field": "Percent"},
       "range": "heatmap",
-      "interpolate": "hcl"
+      "interpolate": "hcl",
+      "zero": false
     }
   ],
   "legends": [
     {
       "fill": "color",
       "gradientLength": {"signal": "clamp(height, 64, 200)"},
-      "labelOverlap": "greedy",
       "title": "Percent"
     }
   ],
