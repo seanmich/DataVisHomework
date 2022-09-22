@@ -1,5 +1,5 @@
 ﻿Country_Name,Country_Code,Percent
-Aruba,ABW,
+Aruba,ABW,NULL
 Africa Eastern and Southern,AFE,17.36745212
 Afghanistan,AFG,11.69661866
 Africa Western and Central,AFW,16.33996964
@@ -10,7 +10,7 @@ Arab World,ARB,12.22614736
 United Arab Emirates,ARE,12.67881966
 Argentina,ARG,12.53734876
 Armenia,ARM,1.12288818
-American Samoa,ASM,
+American Samoa,ASM,NULL
 Antigua and Barbuda,ATG,9.932268524
 Australia,AUS,13.47729154
 Austria,AUT,1.719424334
@@ -20,39 +20,39 @@ Belgium,BEL,12.21549988
 Benin,BEN,17.7918832
 Burkina Faso,BFA,22.66116952
 Bangladesh,BGD,11.84475444
-Bulgaria,BGR,
+Bulgaria,BGR,NULL
 Bahrain,BHR,9.893433228
 "Bahamas, The",BHS,11.43671131
-Bosnia and Herzegovina,BIH,
+Bosnia and Herzegovina,BIH,NULL
 Belarus,BLR,16.53841611
 Belize,BLZ,22.22264514
-Bermuda,BMU,
+Bermuda,BMU,NULL
 Bolivia,BOL,19.12288818
 Brazil,BRA,16.1483593
 Barbados,BRB,16.58196386
-Brunei Darussalam,BRN,
+Brunei Darussalam,BRN,NULL
 Bhutan,BTN,21.87844857
 Botswana,BWA,15.68711243
 Central African Republic,CAF,9.797812462
-Canada,CAN,
+Canada,CAN,NULL
 Central Europe and the Baltics,CEB,1.819974877
 Switzerland,CHE,15.53279973
-Channel Islands,CHI,
+Channel Islands,CHI,NULL
 Chile,CHL,21.36669794
 China,CHN,11.22999954
 Cote d'Ivoire,CIV,18.28893754
 Cameroon,CMR,16.88315964
-"Congo, Dem. Rep.",COD,
+"Congo, Dem. Rep.",COD,NULL
 "Congo, Rep.",COG,18.28824615
 Colombia,COL,14.74662971
-Comoros,COM,
+Comoros,COM,NULL
 Cabo Verde,CPV,17.56854573
 Costa Rica,CRI,26.86669922
 Caribbean small states,CSS,14.1778698
-Cuba,CUB,
-Curacao,CUW,
-Cayman Islands,CYM,
-Cyprus,CYP,
+Cuba,CUB,NULL
+Curacao,CUW,NULL
+Cayman Islands,CYM,NULL
+Cyprus,CYP,NULL
 Czech Republic,CZE,1.589197159
 Germany,DEU,11.22558215
 Djibouti,DJI,13.99153418
@@ -68,7 +68,7 @@ Europe & Central Asia,ECS,11.74643993
 Ecuador,ECU,11.68184682
 "Egypt, Arab Rep.",EGY,12.26228882
 Euro area,EMU,11.1865449
-Eritrea,ERI,
+Eritrea,ERI,NULL
 Spain,ESP,1.332974285
 Estonia,EST,13.35336971
 Ethiopia,ETH,24.15567444
@@ -83,16 +83,16 @@ Gabon,GAB,15.12352657
 United Kingdom,GBR,13.34479971
 Georgia,GEO,12.95149994
 Ghana,GHA,18.59816933
-Gibraltar,GIB,
+Gibraltar,GIB,NULL
 Guinea,GIN,14.87124852
 "Gambia, The",GMB,11.35991955
-Guinea-Bissau,GNB,
-Equatorial Guinea,GNQ,
+Guinea-Bissau,GNB,NULL
+Equatorial Guinea,GNQ,NULL
 Greece,GRC,7.417498969
-Grenada,GRD,
+Grenada,GRD,NULL
 Greenland,GRL,17.55579948
 Guatemala,GTM,23.75538635
-Guam,GUM,
+Guam,GUM,NULL
 Guyana,GUY,16.32196449
 High income,HIC,11.75439654
 "Hong Kong SAR, China",HKG,2.621594177
@@ -107,36 +107,36 @@ IDA total,IDA,15.88862377
 IDA blend,IDB,16.23297977
 Indonesia,IDN,19.15281514
 IDA only,IDX,15.88862377
-Isle of Man,IMN,
+Isle of Man,IMN,NULL
 India,IND,16.72864914
-Not classified,INX,
+Not classified,INX,NULL
 Ireland,IRL,13.32429276
 "Iran, Islamic Rep.",IRN,23.13994262
-Iraq,IRQ,
+Iraq,IRQ,NULL
 Iceland,ISL,17.24921989
 Israel,ISR,15.52122272
 Italy,ITA,8.795741276
 Jamaica,JAM,18.58399963
 Jordan,JOR,9.859749795
-Japan,JPN,
+Japan,JPN,NULL
 Kazakhstan,KAZ,14.19534489
 Kenya,KEN,19.35195823
 Kyrgyz Republic,KGZ,16.79593448
 Cambodia,KHM,11.82999992
 Kiribati,KIR,2.177613973
 St. Kitts and Nevis,KNA,13.52999973
-"Korea, Rep.",KOR,
+"Korea, Rep.",KOR,NULL
 Kuwait,KWT,12.82629967
 Latin America & Caribbean (excluding high income),LAC,17.31398964
-Lao PDR,LAO,
+Lao PDR,LAO,NULL
 Lebanon,LBN,9.898289685
 Liberia,LBR,8.147789955
-Libya,LBY,
+Libya,LBY,NULL
 St. Lucia,LCA,14.46759332
 Latin America & Caribbean,LCN,16.36314823
 Least developed countries: UN classification,LDC,14.64414244
 Low income,LIC,15.85888295
-Liechtenstein,LIE,
+Liechtenstein,LIE,NULL
 Sri Lanka,LKA,11.33919227
 Lower middle income,LMC,16.98699356
 Low & middle income,LMY,15.82935471
@@ -146,7 +146,7 @@ Lithuania,LTU,11.74273147
 Luxembourg,LUX,8.658579826
 Latvia,LVA,11.14759575
 "Macao SAR, China",MAC,16.59794998
-St. Martin (French part),MAF,
+St. Martin (French part),MAF,NULL
 Morocco,MAR,16.86827726
 Monaco,MCO,5.292717212
 Moldova,MDA,19.46438264
@@ -156,14 +156,14 @@ Middle East & North Africa,MEA,13.77495275
 Mexico,MEX,16.57785342
 Marshall Islands,MHL,24.89999466
 Middle income,MIC,15.68711243
-North Macedonia,MKD,
+North Macedonia,MKD,NULL
 Mali,MLI,15.95777512
-Malta,MLT,
+Malta,MLT,NULL
 Myanmar,MMR,1.564129829
 Middle East & North Africa (excluding high income),MNA,14.46348
-Montenegro,MNE,
+Montenegro,MNE,NULL
 Mongolia,MNG,2.483357538
-Northern Mariana Islands,MNP,
+Northern Mariana Islands,MNP,NULL
 Mozambique,MOZ,19.33679962
 Mauritania,MRT,1.228197144
 Mauritius,MUS,19.27433139
@@ -171,7 +171,7 @@ Malawi,MWI,15.82935471
 Malaysia,MYS,19.64325948
 North America,NAC,13.14618153
 Namibia,NAM,26.39399933
-New Caledonia,NCL,
+New Caledonia,NCL,NULL
 Niger,NER,16.33996964
 Nigeria,NGA,5.944551945
 Nicaragua,NIC,23.9576294
@@ -192,13 +192,13 @@ Papua New Guinea,PNG,9.227137231
 Poland,POL,11.99291134
 Pre-demographic dividend,PRE,16.11419249
 Puerto Rico,PRI,19.43918374
-"Korea, Dem. People's Rep.",PRK,
+"Korea, Dem. People's Rep.",PRK,NULL
 Portugal,PRT,1.812635614
 Paraguay,PRY,11.96582853
 West Bank and Gaza,PSE,17.78866494
-Pacific island small states,PSS,
+Pacific island small states,PSS,NULL
 Post-demographic dividend,PST,12.21549988
-French Polynesia,PYF,
+French Polynesia,PYF,NULL
 Qatar,QAT,9.319164614
 Romania,ROU,1.469638818
 Russian Federation,RUS,14.34179712
@@ -224,9 +224,9 @@ Slovak Republic,SVK,9.52713127
 Slovenia,SVN,11.33996964
 Sweden,SWE,15.66719845
 Eswatini,SWZ,18.51228882
-Sint Maarten (Dutch part),SXM,
+Sint Maarten (Dutch part),SXM,NULL
 Seychelles,SYC,11.82717999
-Syrian Arab Republic,SYR,
+Syrian Arab Republic,SYR,NULL
 Turks and Caicos Islands,TCA,13.74713924
 Chad,TCD,15.12629321
 East Asia & Pacific (IDA & IBRD countries),TEA,14.49953445
@@ -242,9 +242,9 @@ Tonga,TON,15.52814685
 South Asia (IDA & IBRD),TSA,12.51737499
 Sub-Saharan Africa (IDA & IBRD countries),TSS,17.1187192
 Trinidad and Tobago,TTO,11.76794669
-Tunisia,TUN,
+Tunisia,TUN,NULL
 Turkiye,TUR,12.42586994
-Tuvalu,TUV,
+Tuvalu,TUV,NULL
 Tanzania,TZA,2.549432959
 Uganda,UGA,11.47267288
 Ukraine,UKR,13.15972996
@@ -253,15 +253,15 @@ Uruguay,URY,16.36347961
 United States,USA,13.14618153
 Uzbekistan,UZB,25.59158516
 St. Vincent and the Grenadines,VCT,19.12639999
-"Venezuela, RB",VEN,
+"Venezuela, RB",VEN,NULL
 British Virgin Islands,VGB,13.99639343
-Virgin Islands (U.S.),VIR,
+Virgin Islands (U.S.),VIR,NULL
 Vietnam,VNM,16.98699356
 Vanuatu,VUT,5.588349819
 World,WLD,14.13446449
 Samoa,WSM,16.21499616
-Kosovo,XKX,
-"Yemen, Rep.",YEM,
+Kosovo,XKX,NULL
+"Yemen, Rep.",YEM,NULL
 South Africa,ZAF,19.59622955
 Zambia,ZMB,17.1187192
 Zimbabwe,ZWE,19.39846982
