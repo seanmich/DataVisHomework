@@ -15,12 +15,18 @@
   
 <div id="map"></div>
 
+<div id="vis2"></div>
+
 <script type="text/javascript">
 
   var spec2 = "visualization.vg.json";
   vegaEmbed('#map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+
+  var spec3 = "vis2.vg.json";
+  vegaEmbed('#vis2', spec3).then(function(result) {
+  }).catch(console.error);
+
 </script>
 
 </body>
