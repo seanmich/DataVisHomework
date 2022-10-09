@@ -11,7 +11,7 @@
   "data": [
     {
       "name": "source_1",
-      "url": "https://raw.githubusercontent.com/seanmich/DataVisHomework/main/data/gov_spending.csv",
+      "url": "https://raw.githubusercontent.com/seanmich/seanmich.github.io/main/data/data.csv",
       "format": {"type": "csv", "delimiter": ","}
     },
     {
