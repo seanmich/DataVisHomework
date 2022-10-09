@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 500,
     "height": 400,
-    "title": "COVID-19 Cases per Country (13 Oct 2020)",
+    "title": "% of Government Spending on Education vs % of Primary Enrolment",
     "data": {
       "url": "https://raw.githubusercontent.com/seanmich/seanmich.github.io/main/data/data.csv"
       },
@@ -37,7 +37,11 @@
         "scale":{"type": "log"}
       },
       "tooltip":[
-        {"field":"Country_Name","title":"Country"}
+        {"field":"Country_Name","title":"Country"},
+        {"field":"Population 2017","title":"Population","format":".3s"},
+        {"field":"Percent","title":"Government Spending %","format":".3s"},
+        {"field":"Net Enrollment 2017","title":"Primary Enrolment %","format":".3s"}
+        
       ]
     },
     "transform": [
