@@ -1,13 +1,25 @@
 * {
     font-family: Verdana, sans-serif;
+    margin: 0
 }
 
 body {
     width: 1500px;
 }
 
+div {
+    margin: 0;
+}
+
+#header {
+    background-image: url(https://media.istockphoto.com/photos/female-hands-typing-on-laptop-student-workspace-on-a-blue-pastel-picture-id1224313258?k=20&m=1224313258&s=612x612&w=0&h=iuo2VYcJu0MFhjQPE5ts0U7DvGN0R-CzSmNk8rjqfeg=);
+    margin: 0;
+}
+
 #title {
     margin: auto;
     width: 50%;
     text-align: center;
+    padding: 2% 0 2% 0;
+    font-size:xx-large;
 }

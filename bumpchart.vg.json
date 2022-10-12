@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title":"University Rankings 2018-2021",
-    "width":500,
-    "height":400,
+    "width":400,
+    "height":300,
     "data":{"url": "https://raw.githubusercontent.com/seanmich/seanmich.github.io/main/data/unirank.csv"},
     "transform": [{
         "window": [{
