@@ -1,4 +1,10 @@
+* {
+    font-family: Verdana, sans-serif;
+}
 
+body {
+    background-color: deepskyblue;
+}
 
 #title {
     margin: auto;
