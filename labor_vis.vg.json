@@ -3,7 +3,7 @@
   "background": "white",
   "padding": 5,
   "width": 400,
-  "height": 500,
+  "height": 300,
   "title": {
     "text": "Highest Percentage of Gov. Spending Spent on Education from 2015-2019",
     "frame": "group"
@@ -125,6 +125,5 @@
       "gradientLength": {"signal": "clamp(height, 64, 200)"},
       "title": "Percent"
     }
-  ],
-  "config": {}
+  ]
 }
