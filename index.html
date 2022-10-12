@@ -13,18 +13,26 @@
 </head>
 <body>
   
+<h1></h1>
+
 <div id="map"></div>
 
 <div id="vis2"></div>
 
+<div id="bump"></div>
+
 <script type="text/javascript">
 
-  var spec2 = "visualization.vg.json";
-  vegaEmbed('#map', spec2).then(function(result) {
+  var spec1 = "visualization.vg.json";
+  vegaEmbed('#map', spec1).then(function(result) {
   }).catch(console.error);
 
-  var spec3 = "vis2.vg.json";
-  vegaEmbed('#vis2', spec3).then(function(result) {
+  var spec2 = "vis2.vg.json";
+  vegaEmbed('#vis2', spec2).then(function(result) {
+  }).catch(console.error);
+
+  var spec3 = "bumpchart.vg.json";
+  vegaEmbed('#bump', spec3).then(function(result) {
   }).catch(console.error);
 
 </script>
