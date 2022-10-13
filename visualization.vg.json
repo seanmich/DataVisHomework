@@ -1,9 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Highest Percent of Government Spending Spent on Education from 2016-2019",
-  "width": 1500,
+  "width": 1400,
   "height": 600,
   "projection": {"type": "equalEarth"},
+  "config": {
+    "style": {
+      "geoshape": {
+        "stroke":"black",
+        "strokeWidth":0.2
+      }
+    }
+  },
   "layer":[
     {
       "data": {
@@ -20,27 +28,23 @@
             "key": "Country_Code",
             "fields": ["Percent"]
           }
+        },
+        {
+          "calculate": "datum.Percent / 100", "as": "Percent2"
         }
       ],
       "mark": {"type": "geoshape"},
       "encoding": {
         "color": {
           "field": "Percent",
-          "type": "quantitative"
-        },
+          "type": "quantitative",
+          "condition":{"test":"datum['Percent'] == 0",
+        "value":"grey"}
+          },
         "tooltip": [
           {"field": "properties.NAME_LONG", "type": "nominal", "title": "Country"},
-          {"field": "Percent", "type": "quantitative"}
+          {"field": "Percent2", "type": "quantitative","format": "0.1%","title":"Percent of Gov. Spending"}
         ]
-      }
-    },
-    {
-      "mark":"text",
-      "encoding": {
-        "text":{
-          "field":"Percent", "type": "nominal"
-        },
-        "color":{"value":"black"}
       }
     }
   ]
