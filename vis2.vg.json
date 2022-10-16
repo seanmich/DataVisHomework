@@ -17,34 +17,47 @@
         "step": 1000000,
         "name": "Minimum Population: "
       }
-  }
-  ],
-    "mark": "circle",
-    "encoding": {
-      "x": {
-        "field": "Percent",
-        "type": "quantitative",
-        "title": "Government Spending (% of total)"
       },
-      "y": {
-        "field": "Net Enrollment 2017",
-        "type": "quantitative",
-        "title": "Net Primary Enrolment (% of total)"
+      {
+        "name": "hover_mark",
+        "select":{"type": "point","on":"mouseover"}
+      }
+      ],
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "Percent",
+          "type": "quantitative",
+          "title": "Government Spending (% of total)"
+        },
+        "y": {
+          "field": "Net Enrollment 2017",
+          "type": "quantitative",
+          "title": "Net Primary Enrolment (% of total)",
+          "scale":{"domain":[40,100]}
+        },
+        "size": {
+          "condition":{
+            "param": "hover_mark","empty": false,"value":1000
+          },
+          "value":250
+        },
+        "color":{
+          "field": "Population 2017",
+          "type": "quantitative",
+          "scale":{"scheme":"reds"}
+        },
+        "tooltip":[
+          {"field":"Country_Name","title":"Country"},
+          {"field":"Population 2017","title":"Population","format":".3s"},
+          {"field":"Percent","title":"Government Spending %","format":".3s"},
+          {"field":"Net Enrollment 2017","title":"Primary Enrolment %","format":".3s"}
+          
+        ]
       },
-      "size": {
-        "field": "Population 2017",
-        "type": "quantitative",
-        "scale":{"type": "log"}
-      },
-      "tooltip":[
-        {"field":"Country_Name","title":"Country"},
-        {"field":"Population 2017","title":"Population","format":".3s"},
-        {"field":"Percent","title":"Government Spending %","format":".3s"},
-        {"field":"Net Enrollment 2017","title":"Primary Enrolment %","format":".3s"}
-        
+      "transform": [
+        {"filter":"datum['Population 2017'] > Population_Above"},
+        {"filter":"datum['Net Enrollment 2017'] > 0"},
+        {"filter":"datum['Percent'] > 0"}
       ]
-    },
-    "transform": [
-      {"filter":"datum['Population 2017'] > Population_Above"}
-    ]
   }
