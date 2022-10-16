@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width":400,
+    "height":300,
+    "layer": [
+        {
+            "data":{"url": "https://raw.githubusercontent.com/seanmich/seanmich.github.io/main/data/melted_labor_data.csv"},
+            "params": [
+                {"name": "hover_line","select":{"type": "point","on":"mouseover"}}
+            ],
+            "mark":{"type": "line"},
+            "encoding": {
+                "x":{
+                    "field":"Year",
+                    "type": "temporal"
+                },
+                "y":{
+                    "field":"LaborForce",
+                    "type": "quantitative"
+                },
+                "color":{
+                    "field":"Country Name"
+                },
+                "strokeWidth":{
+                    "value":2,
+                    "condition":[{"param": "hover_line","empty": false,"value":6},
+                {"param": "hover_line","empty": true,"value":4}]
+                },
+                "tooltip":[
+                  {"field":"Country Name"}
+                ]
+            }
+        }
+    ]
+  }
