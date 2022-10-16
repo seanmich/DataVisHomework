@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 500,
-    "height": 400,
-    "title": "% of Government Spending on Education vs % of Primary Enrolment",
+    "width": 600,
+    "height": 300,
+    "title": {"text":"% of Government Spending on Education vs % of Primary Enrolment (2017)","fontSize":18},
     "data": {
       "url": "https://raw.githubusercontent.com/seanmich/seanmich.github.io/main/data/data.csv"
       },
@@ -14,7 +14,7 @@
         "input": "range",
         "min": 0,
         "max": 100000000,
-        "step": 1000000,
+        "step": 100000,
         "name": "Minimum Population: "
       }
       },
@@ -28,7 +28,8 @@
         "x": {
           "field": "Percent",
           "type": "quantitative",
-          "title": "Government Spending (% of total)"
+          "title": "Government Spending (% of total)",
+          "scale":{"domain":[0,35]}
         },
         "y": {
           "field": "Net Enrollment 2017",
@@ -45,7 +46,8 @@
         "color":{
           "field": "Population 2017",
           "type": "quantitative",
-          "scale":{"scheme":"reds"}
+          "scale":{"scheme":"reds"},
+          "legend":null
         },
         "tooltip":[
           {"field":"Country_Name","title":"Country"},

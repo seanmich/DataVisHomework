@@ -2,7 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 1500,
   "height": 600,
-  "title":{"text":"Percent of Government Spending Spent on Education (2000-2019)","fontSize":25},
+  "title":{"text":"Percent of Government Spending Spent on Education (2000-2018)","fontSize":25},
+  "config": {"style": {"cell":{"stroke":"transparent"}}},
   "projection": {"type": "equalEarth"},
   "params": [
     {
@@ -11,7 +12,7 @@
       "bind": {
         "input": "range",
         "min": 2000,
-        "max": 2019,
+        "max": 2018,
         "step": 1,
         "name": "Year:  "
       }
@@ -71,7 +72,7 @@
       "mark": {"type": "geoshape"},
       "encoding": {
         "shape": {"field": "geo", "type": "geojson"},
-        "color": {"field": "Percent", "type": "quantitative","legend":{"orient": "top-right"}},
+        "color": {"field": "Percent", "type": "quantitative","scale":{"domain":[0,15]},"legend":{"orient": "top-right","direction": "vertical"}},
         "strokeWidth":{"condition":{"param": "hoverover","value":3,"empty": false},"value":0.5},
         "stroke":{"condition":{"param": "hoverover","value":"green","empty": false},"value":"black"},
         "tooltip": [

@@ -9,23 +9,141 @@
   
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
   
 </head>
 <body>
-  
-  <div id="header">
+
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <div id="header">
     
-    <h1 id="title">World Education Statistics</h1>
-
+      <h1 id="title">World Education Statistics</h1>
+  
+    </div>
   </div>
+</div>
 
-<div id="map"></div>
+<div class="pure-g" id="banner-highlight">
+  <div class="pure-u-1-1">
+    <h4>A visualization by Sean Michael</h4>
+  </div>
+</div>
 
-<p>HASDAFSA</p>
+<div class="pure-g">
+  <div class="pure-u-1-3"></div>
+  <div class="pure-u-1-3">
+    <blockquote>“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” – Malcolm X</blockquote>
+  </div>
+  <div class="pure-u-1-3"></div>
 
-<div id="vis2"></div>
 
-<div id="bump"></div>
+</div>
+
+<div class="pure-g">
+  <div class="pure-u-1-1">
+    <div id="map"></div>
+  </div>
+</div>
+
+<div class="pure-g">
+  <div class="pure-u-1-4"></div>
+  <div class="pure-u-1-4">
+    <p>I wanted to visualize the answer to the question: <br> <strong>"How much do governments spend on Education for their country?</strong></p>
+  </div>
+  <div class="pure-u-1-4">
+    <p>As we scroll through the years, we notice some countries' governments increase the amount they spend on education. One notable example being Brazil, who increased their spending from <span class="redtext">3.9%</span> in 2000 to <span class="redtext">6.1% </span>in 2018 </p>
+  </div>
+  <div class="pure-u-1-4"></div>
+</div>
+
+<div class="pure-g">
+  <div class="pure-u-1-1">
+    <h1 class="section-header">Effect on Primary Enrolment Rate</h1>
+  </div>
+</div>
+
+<div class="pure-g">
+  <div class="pure-u-1-2">
+    <div id="vis2"></div>
+  </div>
+  <div class="pure-u-1-2">
+    <p>To see an effect that government spending on education might have, I plotted government spending on education against primary enrolment rate.
+      The intuition being that the more a government spends on education, the more people have access to education.
+      <br>
+      <br>
+      But we can see some interesting outliers such as Singapore having a <span class="redtext">99%</span> enrolment rate while spending only <span class="redtext">2.8%</span> of it's budget on education. 
+    </p>
+  </div>
+</div>
+
+<div class="pure-g">
+  <div class="pure-u-1-1">
+    <h1 class="section-header">Total Labor Force per Country</h1>
+  </div>
+</div>
+
+<div class="pure-g">
+  <div class="pure-u-1-2">
+    <p>
+      One would think that just because the government spends a lot of money on education, it won't mean that their labor force will necessarily be large.
+      <br>
+      <br>
+      In fact, something we see with the labor force chart is that not every country who spends a lot on education has a good labor force.
+      <br>
+      For example, despite spending <span class="redtext">6%</span> on education, Brazil has fewer labor force than the US, who only spends <span class="redtext">3%</span>.
+    </p>  
+  </div>
+  <div class="pure-u-1-2">
+     <div id="labor"></div>
+  </div>
+</div>
+
+<div class="pure-g">
+  <div class="pure-u-1-1">
+    <h1 class="section-header">University Rankings 2018-2021</h1>
+  </div>
+</div>
+    
+<div class="pure-g">
+  <div class="pure-u-1-2">
+    <div id="bump"></div></div>
+  <div class="pure-u-1-2">
+    <p>Our of curiosity, I wanted to know what were the rankings of the top 10 universities in the world and how does their rank change over years.
+      <br>
+      <br>
+      Surprisingly, the world's top university, Massachusetts Institute of Technology, is consistently top 1 over the span of 5 years.
+      <br>
+      <br>
+      Another interesting note is that no other universities rise to the top 10 during that span of 5 years.
+
+    </p>
+  </div>
+</div>
+
+<div class="pure-g">
+  <div class="pure-u-1-1">
+    <h1 class="section-header">University Rankings 2018-2021</h1>
+  </div>
+</div>
+    
+<div class="pure-g">
+  <div class="pure-u-1-2">
+    <p>
+      One would think that just because the government spends a lot of money on education, it won't mean that their labor force will necessarily be large.
+      <br>
+      <br>
+      In fact, something we see with the labor force chart is that not every country who spends a lot on education has a good labor force.
+      <br>
+      For example, despite spending <span class="redtext">6%</span> on education, Brazil has fewer labor force than the US, who only spends <span class="redtext">3%</span>.
+    </p>  
+  </div>
+  <div class="pure-u-1-2">
+     <p>Vis here</p>
+  </div>
+</div>
+
 
 <div>
   <small>
@@ -45,6 +163,10 @@
 
   var spec3 = "bumpchart.vg.json";
   vegaEmbed('#bump', spec3).then(function(result) {
+  }).catch(console.error);
+
+  var spec4 = "linechart.vg.json";
+  vegaEmbed('#labor', spec4).then(function(result) {
   }).catch(console.error);
 
 </script>

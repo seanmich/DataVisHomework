@@ -1,12 +1,29 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width":400,
+    "width":600,
     "height":300,
+    "title":{"text":"Labor Force by Country (1992-2021)","fontSize":18},
+    "params": [
+        {
+            "name": "Population_Below",
+            "value": 900000000,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 900000000,
+                "step": 1000,
+                "name": "Minimum Population: "
+            }
+        }  
+    ],
     "layer": [
         {
             "data":{"url": "https://raw.githubusercontent.com/seanmich/seanmich.github.io/main/data/melted_labor_data.csv"},
             "params": [
-                {"name": "hover_line","select":{"type": "point","on":"mouseover"}}
+                {"name": "hover_line","select":{"type": "point","on":"mouseover"}} 
+            ],
+            "transform": [
+                {"filter":"datum.LaborForce < Population_Below"}
             ],
             "mark":{"type": "line"},
             "encoding": {
@@ -16,10 +33,12 @@
                 },
                 "y":{
                     "field":"LaborForce",
-                    "type": "quantitative"
+                    "type": "quantitative",
+                    "title":"Labor Force"
                 },
                 "color":{
-                    "field":"Country Name"
+                    "field":"Country Name",
+                    "legend":null
                 },
                 "strokeWidth":{
                     "value":2,
@@ -27,7 +46,9 @@
                 {"param": "hover_line","empty": true,"value":4}]
                 },
                 "tooltip":[
-                  {"field":"Country Name"}
+                  {"field":"Country Name"},
+                  {"field":"LaborForce","format":"0.02s"},
+                  {"field":"Year","timeUnit":"year"}
                 ]
             }
         }

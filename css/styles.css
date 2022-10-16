@@ -1,15 +1,28 @@
 * {
     font-family: Verdana, sans-serif;
-    margin: 0
 }
 
 body {
     width: 1500px;
 }
 
-div {
-    margin: 0;
+p {
+    font-size: 18px;
+    text-align: center;
+    padding: 5%;
 }
+
+h4 {
+    text-align: center;
+}
+
+
+blockquote {
+    font-style: italic;
+    font-size: large;
+    padding: 4%;
+}
+
 
 #header {
     background-image: url(https://raw.githubusercontent.com/seanmich/seanmich.github.io/main/banner.jpg);
@@ -17,26 +30,39 @@ div {
 }
 
 #title {
-    margin: auto;
-    width: 50%;
+    margin: 0 auto 0 auto;
     text-align: center;
     padding: 2% 0 2% 0;
-    font-size:xx-large;
+    font-size: 64px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+#banner-highlight {
+    background-color: lightblue;
+    color: black;
 }
 
 #map {
-    width: 1500px;
-    margin: 0;
-}
-
-#bump {
-    width: 725px;
-    height: 400px;
-    margin: 0;
+    text-align: center;
 }
 
 #vis2 {
-    width: 725px;
-    height: 400px;
-    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+.redtext {
+    color: red;
+}
+
+.section-header {
+    background-color: aquamarine;
+    padding: 2%;
+    text-align: center;
 }

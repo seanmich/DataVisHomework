@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title":"University Rankings 2018-2021",
-    "width":400,
+    "width":500,
     "height":300,
     "data":{"url": "https://raw.githubusercontent.com/seanmich/seanmich.github.io/main/data/unirank.csv"},
     "transform": [{
@@ -14,7 +14,7 @@
     "layer":[
         {
             "params": [
-                {"name": "sel_uni","select":{"type": "point","on":"click","fields": ["UniversityName"]},
+                {"name": "sel_uni","select":{"type": "point","on":"mouseover","fields": ["UniversityName"]},
                 "bind":"legend"},
                 {"name": "hover_uni","select":{"type": "point","on":"mouseover"}}
             ],
@@ -32,8 +32,10 @@
                     }
                 },
                 "color":{
-                "field":"UniversityName","type":"nominal"
-                },
+                    "field":"UniversityName","type":"nominal"},
+                "tooltip":[
+                    {"field":"UniversityName","title":"University Name","type": "nominal"}
+                ],
                 "size":{
                     "value":2,
                     "condition":[
