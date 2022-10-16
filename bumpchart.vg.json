@@ -15,7 +15,8 @@
         {
             "params": [
                 {"name": "sel_uni","select":{"type": "point","on":"click","fields": ["UniversityName"]},
-                "bind":"legend"}
+                "bind":"legend"},
+                {"name": "hover_uni","select":{"type": "point","on":"mouseover"}}
             ],
             "mark":{"type": "line","orient": "vertical","interpolate":"monotone"},
             "encoding": {
@@ -31,12 +32,37 @@
                     }
                 },
                 "color":{
-                    "field":"UniversityName","type":"nominal"
-                    },
-                    "size":{
-                        "value":2,
-                        "condition":{"param": "sel_uni", "empty": false, "value":7}
+                "field":"UniversityName","type":"nominal"
+                },
+                "size":{
+                    "value":2,
+                    "condition":[
+                        {"param": "hover_uni", "empty": false, "value":10},
+                        {"param": "hover_uni", "empty": true, "value":5}
+                    ]
+                }
+            }
+        },
+        {
+            "mark":"tick",
+            "encoding": {
+                "x":{
+                    "field":"Year",
+                    "type": "ordinal"
+                },
+                "y":{
+                    "field":"Rank",
+                    "type": "ordinal",
+                    "axis":{
+                        "grid": true
                     }
+                },
+                "color":{
+                "field":"UniversityName","type":"nominal"
+                },
+                "size":{
+                    "value":10
+                }
             }
         }
     ]
