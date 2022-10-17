@@ -7,11 +7,12 @@
         {"filter":"datum['Year'] <= 2016"},
         {"calculate": "datum.Disaggregation", "as": "gender"}
     ],
+    "title":"% of Male and Female Population Enroled into Tertiary Education or Equivalent",
     "params": [
         {
             "name": "country_select",
             "bind":{"name":"Select a country: ","input": "select","options":["United States","Malaysia","Indonesia","China","India","Brazil","Japan","South Africa","United Kingdom"]},
-            "value":"United States"
+            "value":"India"
         }
     ],
     "spacing": 0,
